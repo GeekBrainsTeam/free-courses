@@ -4,7 +4,9 @@ function parseNumber() {
     var resultNumeralSystem = process.argv[4];
     var res = 0;
     if (+resultNumeralSystem === 10) {
-        var res = parseInt(number, +numeralSystem);
+        res = parseInt(number, +numeralSystem);
+    } else if (+numeralSystem === 10) {
+        res = Number(number).toString(+resultNumeralSystem);
     }
     return process.stdout.write(res + '\n');
 }
