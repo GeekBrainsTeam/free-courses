@@ -10,4 +10,4 @@ if (+resultNumeralSystem === 10) {
     res = Number(+parseInt(number, +numeralSystem)).toString(+resultNumeralSystem);
 }
 res=res.toString();
-process.stdout.write(res);
+process.stdout.write(res); 
