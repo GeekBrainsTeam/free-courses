@@ -1,7 +1,7 @@
 function parseNumber() {
-    var number = process.argv[1];
-    var numeralSystem = process.argv[2];
-    var resultNumeralSystem = process.argv[3];
+    var number = process.argv[2];
+    var numeralSystem = process.argv[3];
+    var resultNumeralSystem = process.argv[4];
     var res = 0;
     if (+resultNumeralSystem === 10) {
         res = parseInt(number, +numeralSystem);
