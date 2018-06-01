@@ -5,7 +5,7 @@ result='';
     }
     
     if (s==result) {
-    return 'YES;;
+    return 'YES';
     }
     else {
         return 'NO';
