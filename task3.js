@@ -1,4 +1,4 @@
-function func(a,b){
+п»їfunction func(a,b){
 var res=a+b;
 var h=3600;
 var m=60;
@@ -8,25 +8,25 @@ var izm1=izm2=izm3='';
     sall=(res%3600)%60;
     
     if (hall%10==1 && hall!=11) 
-    {izm1='час';}
+    {izm1='С‡Р°СЃ';}
     else if (hall<5 && hall>1 || hall%10>1 && hall%10<5)
-    {izm1='часа';}
+    {izm1='С‡Р°СЃР°';}
     else
-    {izm1='часов';}
+    {izm1='С‡Р°СЃРѕРІ';}
     
     if (mall%10==1 && mall!=11) 
-    {izm2='минута';}
+    {izm2='РјРёРЅСѓС‚Р°';}
     else if (mall<5 && mall>1 || mall%10>1 && mall%10<5)
-    {izm2='минуты';}
+    {izm2='РјРёРЅСѓС‚С‹';}
     else
-    {izm2='минут';}
+    {izm2='РјРёРЅСѓС‚';}
     
     if (sall%10==1 && sall!=11) 
-    {izm3='секунда';}
+    {izm3='СЃРµРєСѓРЅРґР°';}
     else if (sall<5 && sall>1 || sall%10>1 && sall%10<5)
-    {izm3='секунды';}
+    {izm3='СЃРµРєСѓРЅРґС‹';}
     else
-    {izm3='секунд';}
+    {izm3='СЃРµРєСѓРЅРґ';}
     
     
 return hall+' '+izm1+' '+mall+' '+izm2+' '+sall+' '+izm3;
