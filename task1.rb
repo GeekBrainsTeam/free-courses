@@ -1,5 +1,3 @@
-# Task 1
-# Put your code here
 
 def loe(phrase)
   if phrase.downcase.scan(/\w/).eql?(phrase.downcase.scan(/\w/).reverse)
