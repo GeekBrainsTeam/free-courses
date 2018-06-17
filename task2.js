@@ -1,7 +1,6 @@
 var a=process.argv[2].split("");
 var b=process.argv[3].split("");
 
-
 var left_shift=0;
 var right_shift=0;
 var f=true;
@@ -34,7 +33,7 @@ function RightShift(mas){
 	return mas;
 }
 
-if (Comparison(a,b)==false){
+if (a.length==b.length && Comparison(a,b)==false){
 	new_a=process.argv[2].split("");
 
 	do{
@@ -58,5 +57,8 @@ if (Comparison(a,b)==false){
 			break;
 		}
 	} while(Comparison(new_a,b)==false);
+} else {
+	right_shift=-1;
+	left_shift=-1;
 }
-process.stdout.write(Math.min(left_shift,right_shift));
+console.log(Math.min(left_shift,right_shift));
