@@ -1,7 +1,6 @@
-var p1=process.argv[2];
-a=p1.substring(1,(p1.length-1)).split(",");
-var p2=process.argv[3];
-b=p2.substring(1,(p2.length-1)).split(",");
+var a=process.argv[2].split("");
+var b=process.argv[3].split("");
+
 
 var left_shift=0;
 var right_shift=0;
@@ -36,7 +35,7 @@ function RightShift(mas){
 }
 
 if (Comparison(a,b)==false){
-	new_a=p1.substring(1,(p1.length-1)).split(",");;
+	new_a=process.argv[2].split("");
 
 	do{
 		new_a=LeftShift(new_a);
@@ -48,7 +47,7 @@ if (Comparison(a,b)==false){
 		}
 	} while(Comparison(new_a,b)==false);
 
-	new_a=p1.substring(1,(p1.length-1)).split(",");;
+	new_a=process.argv[2].split("");
 
 	do{
 		new_a=RightShift(new_a);
@@ -60,4 +59,4 @@ if (Comparison(a,b)==false){
 		}
 	} while(Comparison(new_a,b)==false);
 }
-process.stdout.write("Answer: " + Math.min(left_shift,right_shift));
+process.stdout.write(Math.min(left_shift,right_shift));
