@@ -17,38 +17,37 @@ function End(t) {
     }
 }
 
-	if (total >= 3600) {
-		hrs = Math.floor(total / 3600);
-		total -= (hrs * 3600);
-		if (End(hrs) == 2){
-			output = output + hrs + " часов ";
-		}else if (End(hrs) == 0){
-			output = output + hrs + " чаc ";
-		}else {
-			output = output + hrs + " чаcа ";
-		}
+if (total >= 3600) {
+	hrs = Math.floor(total / 3600);
+	total -= (hrs * 3600);
+	if (End(hrs) == 2){
+		output = output + hrs + " часов ";
+	}else if (End(hrs) == 0){
+		output = output + hrs + " чаc ";
+	}else {
+		output = output + hrs + " чаcа ";
+	}
 
+}
+if (total >= 60) {
+	min = Math.floor(total / 60);
+	total -= (min * 60);
+	if (End(min) == 2){
+		output = output + min + " минут ";
+	}else if (End(min) == 0){
+		output = output + min + " минута ";
+	}else {
+		output = output + min + " минуты ";
 	}
-	if (total >= 60) {
-		min = Math.floor(total / 60);
-		total -= (min * 60);
-		if (End(min) == 2){
-			output = output + min + " минут ";
-		}else if (End(min) == 0){
-			output = output + min + " минута ";
-		}else {
-			output = output + min + " минуты ";
-		}
-	}
-	if (total>0) {
-		sec=total;
-		if (End(sec) == 2){
-			output = output + sec + " секунд ";
-		}else if (End(sec) == 0){
-			output = output + sec + " секунда ";
-		}else {
-			output = output + sec + " секунды ";
-		}
+}
+if (total>0) {
+	sec=total;
+	if (End(sec) == 2){
+		output = output + sec + " секунд ";
+	}else if (End(sec) == 0){
+		output = output + sec + " секунда ";
+	}else {
+		output = output + sec + " секунды ";
 	}
 } 
 
