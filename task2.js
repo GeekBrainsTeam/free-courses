@@ -1,11 +1,14 @@
-var a=process.argv[2];
-var b=process.argv[3];
+var p1=process.argv[2];
+a=p1.substring(1,(p1.length-1)).split(",");
+var p2=process.argv[3];
+b=p2.substring(1,(p2.length-1)).split(",");
+
 var left_shift=0;
 var right_shift=0;
 var f=true;
 
 function Comparison(mas1, mas2){
-	for (var i=0;i<=mas1.length;i++){
+	for (var i=0;i<=mas1.length-1;i++){
 		if (mas1[i]!=mas2[i]) {
 			f=false;
 			break;
@@ -33,7 +36,7 @@ function RightShift(mas){
 }
 
 if (Comparison(a,b)==false){
-	new_a=process.argv[2];
+	new_a=p1.substring(1,(p1.length-1)).split(",");;
 
 	do{
 		new_a=LeftShift(new_a);
@@ -45,7 +48,7 @@ if (Comparison(a,b)==false){
 		}
 	} while(Comparison(new_a,b)==false);
 
-	new_a=process.argv[2];
+	new_a=p1.substring(1,(p1.length-1)).split(",");;
 
 	do{
 		new_a=RightShift(new_a);
