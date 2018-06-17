@@ -16,7 +16,7 @@ function End(t) {
     	return end = 1;
     }
 }
-if (total>0) {
+
 	if (total >= 3600) {
 		hrs = Math.floor(total / 3600);
 		total -= (hrs * 3600);
@@ -50,8 +50,6 @@ if (total>0) {
 			output = output + sec + " секунды ";
 		}
 	}
-} else {
-	output = "0 часов 0 минут 0 секунд"
-}
+} 
 
 process.stdout.write(output);
